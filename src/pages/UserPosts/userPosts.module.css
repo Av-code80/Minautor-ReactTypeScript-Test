@@ -1,0 +1,36 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.wrapper {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.wrapperUsername {
+  margin-top: 1rem;
+}
+.wrapperIDUser {
+  color: #1976d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 7vh;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.propertyStyle {
+  font-weight: 700;
+  margin-right: 2rem;
+}
+
+.wrapperElements {
+  margin-top: 1rem;
+}
+
+.wrapperBody {
+  color: #808080;
+}

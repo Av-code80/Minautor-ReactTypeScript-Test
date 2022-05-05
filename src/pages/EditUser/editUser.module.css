@@ -1,0 +1,25 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  margin: 4rem;
+}
+
+.firstField {
+  margin-top: 1rem;
+}
+
+.secondField {
+  margin-top: 1rem;
+}
+
+.loadingButton {
+  margin-top: 1rem;
+}
