@@ -68,29 +68,6 @@ const call = async <T>(
   }
 };
 
-// const file = async (
-//   url: string,
-//   data: FormData,
-//   onUploadProgress?: ((progressEvent: any) => void) | undefined
-// ) => {
-//   try {
-//     const headers = {
-//       Accept: "application/json",
-//       "Content-Type": "multipart/form-data",
-//     };
-//     const response = await client({
-//       url,
-//       data,
-//       method: "post",
-//       headers,
-//       onUploadProgress,
-//     });
-
-//     return Promise.resolve(response.data);
-//   } catch (error: any) {
-//     return Promise.reject(error.response);
-//   }
-// };
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -102,9 +79,5 @@ export default {
   post: <T, D = any>(url: string, data?: D | null) =>
     call<T>("post", url, data),
   put: <T, D = any>(url: string, data?: D | null) => call<T>("put", url, data),
-  // file: (
-  //   url: string,
-  //   data: FormData,
-  //   onUploadProgress: ((progressEvent: any) => void) | undefined
-  // ) => file(url, data, onUploadProgress),
+  
 };

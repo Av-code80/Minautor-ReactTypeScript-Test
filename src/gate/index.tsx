@@ -19,9 +19,4 @@ export const editUser = (userId: string, data: { name: string }) => {
 };
 
 
-// const uploadFile = {
-//   uploadFile: (
-//     data: FormData,
-//     onUploadProgress: ((progressEvent: any) => void) | undefined
-//   ) => api.file("/file-upload", data, onUploadProgress),
-// };
+
