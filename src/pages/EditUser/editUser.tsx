@@ -48,8 +48,9 @@ export const EditUser = () => {
     }
 
     return (
-        userState.loading ?
+     userState.loading ?  
             <div className={styles.loading}><CircularProgress /></div> :
+             <form onSubmit={onEditClick}>
             <div className={styles.inputWrapper}>
                 <div><BackButton /></div>
                 <TextField id="id" label="Id" variant="outlined" disabled value={user?.id} />
@@ -60,11 +61,12 @@ export const EditUser = () => {
                     onChange={onNameChange} />
 
                 <LoadingButton className={styles.loadingButton} loading={false}
-                    loadingPosition="start" variant="contained" color="success" onClick={onEditClick}>
+                    loadingPosition="start" variant="contained" color="success" >
                     Edit
                 </LoadingButton>
             </div>
-
+        </form>
+     
     )
 }
 

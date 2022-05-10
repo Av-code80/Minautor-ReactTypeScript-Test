@@ -65,10 +65,10 @@ export const UsersTable = () => {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell className={styles.tableTh}>id</TableCell>
-              <TableCell className={styles.tableTh} align="center">name</TableCell>
-              <TableCell className={styles.tableTh} align="center">username</TableCell>
-              <TableCell className={styles.tableTh} align="center">actions</TableCell>
+              <TableCell className={styles.tableTh}>Id</TableCell>
+              <TableCell className={styles.tableTh} align="center">Name</TableCell>
+              <TableCell className={styles.tableTh} align="center">Username</TableCell>
+              <TableCell className={styles.tableTh} align="center">Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
